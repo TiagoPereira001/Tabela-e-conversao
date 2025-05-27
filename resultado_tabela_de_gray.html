@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela Código Gray</title>
+</head>
+<body>
+    <h1>Tabela de Código Gray - {{ bits }} bits</h1>
+    <table border="1">
+        <tr>
+            <th>Decimal</th>
+            <th>Binário</th>
+            <th>Gray</th>
+            <th>Hex</th>
+        </tr>
+        {% for linha in tabela %}
+        <tr>
+            <td>{{ linha.decimal }}</td>
+            <td>{{ linha.binario }}</td>
+            <td>{{ linha.gray }}</td>
+            <td>{{ linha.hexadecimal }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
